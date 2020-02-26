@@ -1,17 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Archive</title>
     <link rel="stylesheet" type="text/css" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="what_we_do.css" />
+    <link rel="stylesheet" type="text/css" href="movies_recommendation.css" />
     <style type="text/css">
     a {text-decoration:none}
     </style>
 </head>
 <body>
+    <input id="main-navigation-toggle" class="ghost background-scroll-toggle" type="checkbox">
+    </input>
 
+
+
+
+    <div class="site fixed-header expand-main-navigation">
+        <label for="main-navigation-toggle" class="main-navigation-backdrop"></label>
+        <header class="site-header" role="banner">
+            <div class="site-header-container">
+                <div class="site-branding">
+                    <h1>
+                        <a href="https://gwenzhir.kim" class="custom-logo-link">
+                            <div class="custom-logo">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 550 550" style="enable-background:new 0 0 550 550;" xml:space="preserve">
+                                    <title>괜</title>
+                                    <polygon points="100,200 200,200 200,100 200,0 100,0 0,0 0,100 100,100">
+                                    </polygon>
+                                    <polygon points="200,350 100,350 100,250 0,250 0,350 0,450 100,450 100,550 200,550 300,550 300,450 200,450">
+                                    </polygon>
+                                    <polygon points="450,100 450,0 350,0 350,100 350,200 450,200 450,300 550,300 550,200 550,100"></polygon>
+                                </svg>
+                            </div>
+                        </a>
+                    </h1>
+                </div>
+                <label for="main-navigation-toggle" class="main-navigation-toggle-button">Menu</label>
+
+                <nav class="main-navigation" role="navigation">
+                    <div class="menu-main-menu-container">
+                        <ul id="menu-main-menu" class="menu">
+                            <li id="menu-item-3121742" class="menu-item menu-item-type-post_type menu-item-objact-page menu-item-3121742">
+                                <a href="https://gwenzhir.kim/who">소개</a>
+                            </li>
+                            <li id="menu-item-3121741" class="menu-item menu-item-type-post_type menu-item-objact-page menu-item-3121741">
+                                <a href="https://gwenzhir.kim/everything">글 탐색</a>
+                            </li>
+                            <li id="menu-item-3125004" class="menu-item menu-item-type-post_type menu-item-objact-page menu-item-3125004">
+                                <a href="https://gwenzhir.kim/films">영화 본 거</a>
+                            </li>                 
+                        </ul>
+                    </div>
+                    <span class="menu-divider desktop-only"></span>
+                    <div class="social-menu-container">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a target="_blank" href="https://twitter.com/gwenzhir">
+                                    <span class="mobile-only anchor-label">트위터</span>
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a target="_blank" href="https://instagram.com/keithskim">
+                                    <span class="mobile-only anchor-label">인스타그램</span>
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="menu-divider desktop-only"></span>
+                    <div class="settings-container">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <input id="dark-mode-toggle" class="ghost" type="checkbox"></input>
+                                    <label class="dark-mode-toggle-button" for="dark-mode-toggle">
+                                        <div class="dark-mode-only">
+                                            <a class="anchor">
+                                                <span class="mobile-only anchor-label">다크 모드 끄기</span>
+                                                <i class="fas fa-moon"></i>
+                                            </a>
+                                        </div>
+                                        <div class="light-mode-only">
+                                            <a class="anchor">
+                                                <span class="mobile-only anchor-label">다크 모드 켜기</span>
+                                                <i class="fas fa-moon"></i>
+                                            </a>
+                                        </div>
+                                    </label>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+
+
+
+        <main class="full-width site-body with-header">
+
+        </main>
+
+
+
+
+        <footer class="site-footer" role="contentinfo">
+            <div class="site-info">
+                Keith S. Kim
+            </div>
+        </footer>
+    </div>
 
 
 </body>

@@ -1,0 +1,132 @@
+html{
+  font-size: 15px;
+}
+
+body{
+  background-color: #ffffff;
+  overflow-x: hidden;
+  font-family: "Work Sans", "Gothic A1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: normal;
+}
+
+.main-navigation{
+  overflow: visible;
+  position: relative;
+  display: flex;
+  margin: 0;
+}
+
+/* Mobile & Desktop only */
+@media screen and (min-width: 755px) {
+	.mobile-only {
+	  display: none;
+	}
+}
+
+@media screen and (max-width: 754px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+.main-navigation div[class*=container] ul.menu{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.main-navigation div[class*=container] ul.menu li.menu-item{
+  flex-shrink: 0;
+  padding: 0;
+  position: relative;
+}
+
+.main-navigation div[class*=container] ul.menu li.menu-item a, .main-navigation div[class*=container] ul.menu li.menu-item .anchor{
+  display: block;
+  padding: 0 1rem;
+  border: none;
+  font-weight: bold;
+  font-size: 0.833333rem;
+  line-height: 3.5rem;
+}
+
+.main-navigation .menu-divider{
+  width: 1px;
+  height: auto;
+  background-color: #ebedef;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+.site-header .site-header-container .site-branding{
+  margin-left: -1rem;
+  margin-right: 0;
+  position: relative;
+  overflow: hidden;
+  flex-basis: 33.33%;
+}
+
+.site-header .site-header-container .site-branding a{
+  padding: 0 1rem;
+  border: none;
+  font-size: 1.2rem;
+  display:inline-block;
+}
+
+.site-header .site-header-container .site-branding h1{
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.site-header{
+  background-color: white;
+  height: 3.5rem;
+}
+
+.site .fixed-header .site-header{
+  position:fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 5;
+  box-shadow: 0 15px 25px -20px rgba(95, 100, 105, 0.2);
+}
+
+.site-header .site-header-container{
+  max-width: 980.2px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header .site-header-container .site-branding .custom-logo{
+  height: 1em;
+  width: auto;
+}
+
+.site-footer{
+  display: block;
+  margin: 0 auto;
+  max-width: 980.2px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 0.69rem;
+  color: #7e848a;
+}
